@@ -34,8 +34,8 @@
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#141a19), to(rgba(0, 0, 0, 0))), radial-gradient(54.53% 54.53% at 56.24% 51.15%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%), url("/images/hero-mob-1x.png");
-  background-image: linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(54.53% 54.53% at 56.24% 51.15%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%), url("/images/hero-mob-1x.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#141a19), to(rgba(0, 0, 0, 0))), radial-gradient(54.53% 54.53% at 56.24% 51.15%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%), url(/images/hero-mob-1x.png);
+  background-image: linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(54.53% 54.53% at 56.24% 51.15%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%), url(/images/hero-mob-1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
