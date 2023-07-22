@@ -186,16 +186,6 @@ body {
   background-size: contain;
   margin: 0 auto;
 }
-@media screen and (min-width: 835px) {
-  .about__container {
-    padding: 155px 0 100px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .about__container {
-    padding: 171.3px 0 100px;
-  }
-}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about__container {
     background-image: url(../images/map-uk-mob@2x.png);
@@ -209,7 +199,7 @@ body {
 @media screen and (min-width: 835px) {
   .about__container {
     background-image: url(../images/tablet-uk-map@1x.png);
-    background-size: auto;
+    padding: 155px 0 100px;
   }
 }
 @media screen and (min-width: 835px) and (min-device-pixel-ratio: 2), screen and (min-width: 835px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 835px) and (min-resolution: 192dpi), screen and (min-width: 835px) and (min-resolution: 2dppx) {
@@ -220,7 +210,7 @@ body {
 @media screen and (min-width: 1440px) {
   .about__container {
     background-image: url(../images/desktop-map-uk@1x.png);
-    background-size: auto;
+    padding: 171.3px 0 100px;
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
@@ -310,4 +300,256 @@ body {
 }
 .about__text:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.tours__title {
+  color: #fff;
+  font-family: "Jomolhari", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 835px) {
+  .tours__title {
+    font-size: 64px;
+    line-height: 89.6px;
+    letter-spacing: 0.64px;
+    margin-bottom: 64px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1439.9px) {
+  .swiper-slide img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .swiper-slide img {
+    height: 515px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-buttons__wrapper {
+  width: 343px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+@media screen and (max-width: 374.5px) {
+  .swiper-buttons__wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 835px) {
+  .swiper-buttons__wrapper {
+    width: auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 60px;
+  }
+}
+
+.s-button-prev,
+.s-button-next {
+  fill: #5a5959;
+}
+.s-button-prev:hover,
+.s-button-prev :focus,
+.s-button-next:hover,
+.s-button-next :focus {
+  fill: #fff;
+}
+
+.swiper-content {
+  width: 343px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 374.9px) {
+  .swiper-content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 835px) {
+  .swiper-content {
+    width: 770px;
+  }
+}
+
+@media screen and (min-width: 835px) {
+  .swiper-content__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 39px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .swiper-content__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.tours-swiper__title {
+  color: #fff;
+  font-family: "Jomolhari", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  letter-spacing: 0.24px;
+  margin-top: 16px;
+}
+@media screen and (min-width: 835px) {
+  .tours-swiper__title {
+    font-size: 32px;
+    line-height: 44.8px;
+    letter-spacing: 0.32px;
+    margin: 40px 0 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tours-swiper__title {
+    margin: 64px 0 32px;
+  }
+}
+
+.tours-swiper__text {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+  margin: 16px 0;
+}
+@media screen and (min-width: 835px) {
+  .tours-swiper__text {
+    width: 460px;
+    margin: 0;
+  }
+}
+
+.tours-swiper__included {
+  color: #fff;
+  font-family: "Jomolhari", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  letter-spacing: 0.18px;
+  margin-bottom: 16px;
+}
+
+.tours-swiper__list {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 835px) {
+  .tours-swiper__list {
+    margin-bottom: 0;
+  }
+}
+
+.tours-swiper__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tours-swiper__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item-text {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+  margin-left: 16px;
+}
+
+.tours-swiper__link {
+  display: inline-block;
+  color: #fff;
+  font-family: "Jomolhari", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+  padding: 16px 52px;
+  background-color: #394014;
+  border-radius: 4px;
+  width: 343px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 374.5px) {
+  .tours-swiper__link {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 835px) {
+  .tours-swiper__link {
+    width: 169px;
+    margin-bottom: 0;
+  }
+}
+
+.js-tours__list {
+  width: 460px;
 }/*# sourceMappingURL=main.css.map */

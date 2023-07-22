@@ -18,6 +18,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -106,5 +110,167 @@
         </ul>
       </div>
     </section>
+    <section class="tours">
+      <div class="tours__container">
+        <h2 class="tours__title">Our tours</h2>
+        <div #swiperRef="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/mob-tours-synevyr@1x.jpg 1x,
+                    ./images/mob-tours-synevyr@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 835px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-tours-synevyr@1x.jpg 1x,
+                    ./images/tablet-tours-synevyr@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 835px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-tours-synevyr@1x.jpg 1x,
+                    ./images/desktop-tours-synevyr@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1440px)"
+                />
+                <img src="./images/mob-tours@1x.png" alt="Озеро синевир" />
+              </picture>
+              <div class="swiper-content">
+                <h3 class="tours-swiper__title">
+                  Lake Synevyr and Shipit waterfall
+                </h3>
+                <div class="swiper-content__wrapper">
+                  <div class="js-container">
+                    <p class="tours-swiper__text js-text">
+                      This very interesting excursion will introduce you to the
+                      most beautiful lake of the Carpathians "Synevyr", the
+                      impressive and magical waterfall lake Synevirm "Shypit",
+                      which is also located in the Ukrainian Carpathians. You
+                      will have the opportunity to try Soymivska and Kelechynska
+                      mineral springs, drinks and delicious dishes of Carpathian
+                      cuisine and, of course, admire the beautiful scenery of
+                      the unique Ukrainian Carpathians.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="tours-swiper__included">Included:</p>
+                    <ul class="tours-swiper__list">
+                      <li class="tours-swiper__item">
+                        <svg width="24" height="24">
+                          <use href="./images/icons.svg#bus"></use>
+                        </svg>
+                        <p class="item-text">Transfer</p>
+                      </li>
+                      <li class="tours-swiper__item">
+                        <svg width="24" height="24">
+                          <use href="./images/icons.svg#card"></use>
+                        </svg>
+                        <p class="item-text">Travel insurance</p>
+                      </li>
+                      <li class="tours-swiper__item">
+                        <svg width="24" height="24">
+                          <use href="./images/icons.svg#tour-guide"></use>
+                        </svg>
+                        <p class="item-text">Professional guide</p>
+                      </li>
+                      <li class="tours-swiper__item">
+                        <svg width="24" height="24">
+                          <use href="./images/icons.svg#ticket-blank"></use>
+                        </svg>
+                        <p class="item-text">Travel insurance</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="tours-swiper__link">Book</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/tablet-tours-vila@1x.jpg 1x,
+                    ./images/tablet-tours-vila@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/tablet-tours-vila@1x.jpg" alt="Villa" />
+              </picture>
+              <div class="swiper-content">
+                <h3 class="tours-swiper__title">
+                  Ancient History & Vibrant Present
+                </h3>
+                <div class="swiper-content__wrapper">
+                  <p class="tours-swiper__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                    non expedita, quidem saepe praesentium sequi rem eveniet
+                    provident ducimus, reprehenderit unde quae dolore beatae
+                    corrupti debitis quasi accusantium asperiores magnam quam.
+                    Laudantium, omnis aliquid? Perspiciatis eveniet sunt quaerat
+                    suscipit? Necessitatibus repellendus rerum vitae cum
+                    assumenda dolores adipisci esse quibusdam corporis!
+                  </p>
+                  <div>
+                    <p class="tours-swiper__included">Included:</p>
+                    <ul class="tours-swiper__list">
+                      <li class="tours-swiper__item">
+                        <svg width="24" height="24">
+                          <use href="./images/icons.svg#bus"></use>
+                        </svg>
+                        <p class="item-text">Transfer</p>
+                      </li>
+                      <li class="tours-swiper__item">
+                        <svg width="24" height="24">
+                          <use href="./images/icons.svg#card"></use>
+                        </svg>
+                        <p class="item-text">Travel insurance</p>
+                      </li>
+                      <li class="tours-swiper__item">
+                        <svg width="24" height="24">
+                          <use href="./images/icons.svg#tour-guide"></use>
+                        </svg>
+                        <p class="item-text">Professional guide</p>
+                      </li>
+                      <li class="tours-swiper__item">
+                        <svg width="24" height="24">
+                          <use href="./images/icons.svg#ticket-blank"></use>
+                        </svg>
+                        <p class="item-text">Travel insurance</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="tours-swiper__link">Book</a>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div> -->
+          </div>
+          <div class="swiper-buttons__wrapper">
+            <div class="s-button-prev">
+              <svg width="114" height="20">
+                <use href="./images/icons.svg#arrow-prew"></use>
+              </svg>
+            </div>
+            <div class="s-button-next">
+              <svg width="114" height="20">
+                <use href="./images/icons.svg#arrow-next"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
   </body>
 </html>
