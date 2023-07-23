@@ -595,4 +595,25 @@ body {
 
 .tours-price__span {
   margin-left: 72px;
+}
+
+.swiper-bg {
+  position: relative;
+}
+.swiper-bg::after {
+  content: "";
+}
+@media screen and (min-width: 1440px) {
+  .swiper-bg::after {
+    position: absolute;
+    background-image: url(../images/desktop-tours-bg@1x.png);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.0500000007;
+    z-index: -1;
+  }
 }/*# sourceMappingURL=main.css.map */

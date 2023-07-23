@@ -213,3 +213,21 @@
 .tours-price__span {
   margin-left: 72px;
 }
+.swiper-bg {
+  position: relative;
+  &::after {
+    content: "";
+    @media screen and (min-width: 1440px) {
+      position: absolute;
+      background-image: url(../images/desktop-tours-bg@1x.png);
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.05000000074505806;
+      z-index: -1;
+    }
+  }
+}
