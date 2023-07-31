@@ -1,0 +1,46 @@
+.gallery {
+  padding: 80px 0 80px;
+  @media screen and (min-width: 835px) {
+    padding: 100px 0;
+  }
+}
+.gallery-container {
+  margin: 0 16px;
+  @media screen and (min-width: 835px) {
+    margin: 0 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0 0 0 32px;
+  }
+}
+.gallery-title {
+  font-family: "Jomolhari", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 32px;
+  @media screen and (min-width: 835px) {
+    font-size: 64px;
+    line-height: 89.6px;
+    letter-spacing: 0.64px;
+  }
+}
+
+.gallery-img {
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 100%;
+}
+.swiper-buttons__wrapper--gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  @media screen and (min-width: 835px) {
+    margin-top: 64px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 32px;
+  }
+}

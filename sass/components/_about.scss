@@ -1,3 +1,9 @@
+.about {
+  margin: 80px 0;
+  @media screen and (min-width: 835px) {
+    margin: 100px 0;
+  }
+}
 .about__container {
   padding: 80px 0;
   background-image: url(../images/map-uk-mob@1x.png);
@@ -15,7 +21,6 @@
   }
   @media screen and (min-width: 835px) {
     background-image: url(../images/tablet-uk-map@1x.png);
-    padding: 155px 0 100px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -24,7 +29,6 @@
   }
   @media screen and (min-width: 1440px) {
     background-image: url(../images/desktop-map-uk@1x.png);
-    padding: 171.3px 0 100px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {

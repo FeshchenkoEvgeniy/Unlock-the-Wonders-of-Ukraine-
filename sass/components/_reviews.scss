@@ -1,0 +1,110 @@
+.reviews {
+  background-image: linear-gradient(360deg, #141a19 0%, rgba(0, 0, 0, 0) 30%),
+    linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 30%),
+    url(../images/bg-reviews-mob@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 32px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg-reviews-mob@2x.png);
+  }
+  @media screen and (min-width: 835px) {
+    background-image: linear-gradient(360deg, #141a19 0%, rgba(0, 0, 0, 0) 30%),
+      linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 30%),
+      url(../images/tablet-bg-reviews@1x.png);
+    padding-top: 58px;
+    margin-bottom: 58px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet-bg-reviews@2x.png);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: linear-gradient(360deg, #141a19 0%, rgba(0, 0, 0, 0) 30%),
+      linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 30%),
+      url(../images/desktop-bg-reviews@1x.png);
+    padding-top: 64px;
+    margin-bottom: 64px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop-bg-reviews@2x.png);
+    }
+  }
+}
+.reviews-container {
+  margin: 0 16px;
+  @media screen and (min-width: 835px) {
+    margin: 0 0 0 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0 32px;
+  }
+}
+.reviews-title {
+  font-family: "Jomolhari", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 32px;
+  @media screen and (min-width: 835px) {
+    margin-bottom: 42px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 64px;
+  }
+}
+.reviews-content__container {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 343px;
+  margin: 0 auto;
+  padding: 32px;
+}
+.reviews-content__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.reviews-img__container {
+  margin-right: 24px;
+}
+.reviews-name {
+  color: #fff;
+  font-family: "Jomolhari", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  letter-spacing: 0.18px;
+  @media screen and (min-width: 835px) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+  }
+}
+.reviews-text {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+}
+.swiper-buttons__wrapper--reviews {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0;
+  @media screen and (min-width: 835px) {
+    margin: 94px 34px 58px 0;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 64px 0;
+    justify-content: space-evenly;
+  }
+}
