@@ -43,9 +43,13 @@
       </clipPath>
     </defs>
   </symbol>
-  <symbol id="mobile-menu" viewBox="0 0 40 40">
+  <symbol id="open-menu" viewBox="0 0 40 40">
     <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
       d="M8.333 28.333h13.333M8.333 20h23.333m-13.333-8.333h13.333" />
+  </symbol>
+  <symbol id="close-menu" viewBox="0 0 40 40">
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M30 10 10 30M10 10l20 20" />
   </symbol>
   <symbol id="instagram" viewBox="0 0 24 24">
     <path fill="#fff"

@@ -11,7 +11,19 @@
 }
 .nav__list {
   display: flex;
-  gap: 32px;
+  @media screen and (max-width: 470px) {
+    display: none;
+  }
+}
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    &:not(:last-child) {
+      margin-right: 64px;
+    }
+  }
 }
 .nav__link {
   color: #fff;
@@ -20,4 +32,13 @@
   font-weight: 700;
   line-height: 25.2px;
   letter-spacing: 0.18px;
+}
+.open-menu {
+  @media screen and (min-width: 470px) {
+    display: none;
+  }
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
 }

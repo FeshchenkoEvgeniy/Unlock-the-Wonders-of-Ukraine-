@@ -43,9 +43,9 @@ const renderMarkup = (widthScreen, innerWidthScreen) => {
   if (widthScreen >= 1440 && innerWidthScreen >= 1440) {
     divContent.innerHTML = markup;
     contentDiv.innerHTML = markup2;
-    priceContent.innerHTML = `<a href="#" class="tours-swiper__link">Book</a>
+    priceContent.innerHTML = `<a href="#travel" class="tours-swiper__link">Book</a>
     <p class="tours-price">Price:<span class="tours-price__span">2000 UAH</span></p>`;
-    contentPrice.innerHTML = `<a href="#" class="tours-swiper__link">Book</a>
+    contentPrice.innerHTML = `<a href="#travel" class="tours-swiper__link">Book</a>
     <p class="tours-price">Price:<span class="tours-price__span">3000 UAH</span></p>`;
   } else {
     divContent.innerHTML = `<p class="tours-swiper__text">
@@ -66,11 +66,11 @@ const renderMarkup = (widthScreen, innerWidthScreen) => {
                       quaerat suscipit? Necessitatibus repellendus rerum vitae
                       cum assumenda dolores adipisci esse quibusdam corporis!
                     </p>`;
-    priceContent.innerHTML = `<a href="#" class="tours-swiper__link">
+    priceContent.innerHTML = `<a href="#travel" class="tours-swiper__link">
         Book
       </a>
     `;
-    contentPrice.innerHTML = `<a href="#" class="tours-swiper__link">
+    contentPrice.innerHTML = `<a href="#travel" class="tours-swiper__link">
         Book
       </a>
     `;

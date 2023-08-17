@@ -21,7 +21,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32px;
+}
+@media screen and (max-width: 470px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 32px;
+}
+@media screen and (min-width: 1440px) {
+  .nav__item:not(:last-child) {
+    margin-right: 64px;
+  }
 }
 
 .nav__link {
@@ -31,6 +44,22 @@
   font-weight: 700;
   line-height: 25.2px;
   letter-spacing: 0.18px;
+}
+
+.open-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  background-color: transparent;
+}
+@media screen and (min-width: 470px) {
+  .open-menu {
+    display: none;
+  }
 }
 
 .hero {
@@ -1121,4 +1150,77 @@ body {
     line-height: 19.6px;
     letter-spacing: 0.14px;
   }
+}
+
+.js-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 27px 16px 0;
+  z-index: 100;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  background: black;
+}
+
+.js-menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 200px;
+}
+
+.close-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  background-color: transparent;
+}
+
+.mobile-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.mobile-link {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  letter-spacing: 0.18px;
 }/*# sourceMappingURL=main.css.map */
